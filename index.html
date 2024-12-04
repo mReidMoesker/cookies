@@ -1,48 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cookie Dialog Example</title>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Mathew Moesker">
+    <meta name="description" content="html, css, web, seo, web development">
+    <title>Cookies Intro</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="./assets/css/style.css">
-</head>
-<body>
+    <script src="https://kit.fontawesome.com/cd92dcd941.js" crossorigin="anonymous"></script>
+  </head>
+  <body>
     <div class="banner">
-        <div class="hero-text">
-            <h1>Welcome to Our Website</h1>
-            <p>Explore our features and learn more about our services.</p>
-        </div>
+      <div class="hero-text">
+        <h1>Good day to you sir</h1>
+        <p>Would you like a cookie?</p>
+      </div>
     </div>
 
     <div class="cookie-accept modal">
-        <div class="modal-content">
-            <h2>We Value Your Privacy</h2>
-            <p>We use cookies to help personalize your experience. Please accept all cookies.</p>
-            <button class="accept-all">Accept All</button>
-            <button class="settings">Settings</button>
-        </div>
+      <div class="modal-content">
+        <h2>We Value Your Privacy</h2>
+        <p>We use cookies to help personalize your experience. Please accept all cookies.</p>
+        <button class="accept-all">Accept All</button>
+        <button class="settings">Settings</button>
+      </div>
     </div>
 
     <div class="cookie-choices modal">
-        <div class="modal-content">
-            <h2>Cookie Settings</h2>
-            <p>Select the cookies you want to allow:</p>
-            <label>
-                <input type="checkbox" class="toggle-switch" id="analytics" checked>
-                Analytics Cookies
-            </label>
-            <label>
-                <input type="checkbox" class="toggle-switch" id="functional" checked>
-                Functional Cookies
-            </label>
-            <label>
-                <input type="checkbox" class="toggle-switch" id="ads" checked>
-                Advertising Cookies
-            </label>
-            <button id="save-settings">Save Settings</button>
-        </div>
-    </div>
+      <div class="modal-content">
+          <h2>Cookie Settings</h2>
+          <p>Confirm your cookie preferences:</p>
+          <label>
+              <input type="checkbox" class="toggle-switch browser" checked>
+              <span class="slider"></span>
+              <p class="info-description">Browser</p>
+          </label>
+          <label>
+              <input type="checkbox" class="toggle-switch os" checked>
+              <span class="slider"></span>
+              <p class="info-description">OS</p>
+          </label>
+          <label>
+              <input type="checkbox" class="toggle-switch screen" checked>
+              <span class="slider"></span>
+              <p class="info-description">Screen Dimensions</p>
+          </label>
+          <button class="save-settings">Save Settings</button>
+      </div>
+  </div>
+  
 
-    <script src="script.js"></script>
-</body>
+    <script src="./assets/js/script.js" type="module"></script>
+  </body>
 </html>
