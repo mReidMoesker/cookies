@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cookie Dialog Example</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+<body>
+    <div class="banner">
+        <div class="hero-text">
+            <h1>Welcome to Our Website</h1>
+            <p>Explore our features and learn more about our services.</p>
+        </div>
+    </div>
+
+    <div class="cookie-accept modal">
+        <div class="modal-content">
+            <h2>We Value Your Privacy</h2>
+            <p>We use cookies to help personalize your experience. Please accept all cookies.</p>
+            <button class="accept-all">Accept All</button>
+            <button class="settings">Settings</button>
+        </div>
+    </div>
+
+    <div class="cookie-choices modal">
+        <div class="modal-content">
+            <h2>Cookie Settings</h2>
+            <p>Select the cookies you want to allow:</p>
+            <label>
+                <input type="checkbox" class="toggle-switch" id="analytics" checked>
+                Analytics Cookies
+            </label>
+            <label>
+                <input type="checkbox" class="toggle-switch" id="functional" checked>
+                Functional Cookies
+            </label>
+            <label>
+                <input type="checkbox" class="toggle-switch" id="ads" checked>
+                Advertising Cookies
+            </label>
+            <button id="save-settings">Save Settings</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
